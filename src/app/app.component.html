@@ -1,9 +1,24 @@
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
-    {{shoe}}
-  </mat-list-option>
-</mat-selection-list>
+<div class="container color_blue">
+  <form class="col-xs-12 col-md-12 ">
+    <div class="col-md-6 alinha_container">
+    <div class="contariner_logo">
+        <img class="rounded mx-auto d-block" src="https://acesso-s.cronapp.io/img/logo.png"
+        alt="Responsive image">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+      <input type="text" class="form-control" placeholder="Usuario" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>
+      <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1">
+    </div>
+    <div class="logar_btn">
+        <button type="button" class="btn btn-primary btn-lg ">Logar</button>
+        <button type="button" class="btn btn-success btn-lg ">Cadastre-se</button>
+    </div>
+    
+  </div>
+  </form>
 
-<p>
-  Options selected: {{shoes.selectedOptions.selected.length}}
-</p>
+</div>
