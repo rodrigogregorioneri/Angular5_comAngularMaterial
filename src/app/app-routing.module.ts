@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 const  appRoutes: Routes = [
        {
         path: '',
-        redirectTo: '/login',
+        redirectTo:'/login',
         pathMatch: 'full',
        }  
 ]

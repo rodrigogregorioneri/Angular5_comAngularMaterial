@@ -3,14 +3,17 @@ import { CadastroComponent } from './cadastro.component';
 import { CadastroRoutingModule } from './cadastro-routing.module';
 
 @NgModule({
+    imports: [
+        CadastroRoutingModule
+    ],
     declarations:[
-        CadastroComponent, CadastroRoutingModule
+        CadastroComponent, 
     ],
     exports:[
         CadastroComponent,
         CadastroRoutingModule
     ]
 })
-export class ContatoModule{
+export class CadastroModule{
 
 }

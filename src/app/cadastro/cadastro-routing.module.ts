@@ -5,15 +5,12 @@ import { CadastroComponent } from './cadastro.component';
 const cadastroRoutes: Routes = [
     {
         path: 'cadastro',
-        redirectTo: '/cadastro',
         component: CadastroComponent
     }
 ]
 
 @NgModule({
-    imports: [
-        RouterModule.forChild(cadastroRoutes)
-    ]
+    imports: [RouterModule.forChild(cadastroRoutes)],
 })
 export class CadastroRoutingModule{
 
