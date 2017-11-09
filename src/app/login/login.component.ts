@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute} from '@angular/router';
+
+
 
 @Component({
   selector: 'login-form',
@@ -10,4 +13,10 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent{
 
+  private route: ActivatedRoute;
+  private router: Router;
+
+  gotoHeroes() {
+    this.router.navigate(['/cadastro']);
+  }
 }
