@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatFormFieldModule, MatIconModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
+import { LoginModule } from './login/login.module';
 import 'bootstrap';
 
 @NgModule({
@@ -19,7 +20,8 @@ import 'bootstrap';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
