@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 
 
@@ -16,7 +17,5 @@ export class LoginComponent{
   private route: ActivatedRoute;
   private router: Router;
 
-  gotoHeroes() {
-    this.router.navigate(['/cadastro']);
-  }
+
 }
