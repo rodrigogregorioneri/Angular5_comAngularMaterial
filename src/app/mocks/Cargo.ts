@@ -1,4 +1,4 @@
-export interface Cargo {
+export class Cargo {
     id: string;
     ocupacao: string;
     links: any[];

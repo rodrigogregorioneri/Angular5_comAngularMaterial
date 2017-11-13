@@ -1,4 +1,4 @@
-export interface Ramo {
+export class Ramo {
     id: string;
     tipo: string;
 }
