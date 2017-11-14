@@ -1,14 +1,18 @@
 import { NgModule, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { CadastroComponent } from './cadastro.component';
 import { CadastroRoutingModule } from './cadastro-routing.module';
 import { User } from '../mocks/User';
 import { CadastroService } from '../cadastro/cadastro.service';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 @NgModule({
     imports: [
+        CommonModule,
         CadastroRoutingModule,
-        CadastroService
+        HttpClientModule
     ],
+    providers: [CadastroService] ,
     declarations:[
         CadastroComponent,
     ],
@@ -18,16 +22,12 @@ import { CadastroService } from '../cadastro/cadastro.service';
         
     ]
 })
-export class CadastroModule implements OnInit{
+export class CadastroModule {
     user: User;
     constructor(
-        private cadastroService: CadastroService
+        
       ){}
 
 
-      public ngOnInit(){
-        let promise = this.cadastroService.cadastroUsuario(this.user).then((data)=>{ console.log(data)});
-       // console.log(promise);
-      }
 
 }

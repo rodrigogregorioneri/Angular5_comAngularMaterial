@@ -12,7 +12,8 @@ const cadastroRoutes: Routes = [
 @NgModule({
     imports: [RouterModule.forChild(cadastroRoutes)],
     exports: [
-        RouterModule
+        RouterModule,
+        
     ]
 })
 export class CadastroRoutingModule{

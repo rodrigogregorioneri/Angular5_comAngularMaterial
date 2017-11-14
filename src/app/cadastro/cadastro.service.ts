@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../mocks/User';
-//import {  Headers, Response } from '@angular/http';
+
+
 import {HttpClientModule, HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 
 
@@ -8,8 +9,8 @@ import {HttpClientModule, HttpClient, HttpHeaders, HttpResponse } from '@angular
 @Injectable()
 export class CadastroService{
 
-  private cadastroUrl: string = 'https://parceiroscronapp.cronapp.io/api/security/User';
-  private headers: HttpHeaders = new HttpHeaders({'Content-Type':'aplication/json'});
+  private cadastroUrl: string = 'https://11-122-10580.debug.ide.cronapp.io/api/security/User';
+  private headers: HttpHeaders = new HttpHeaders({'Content-Type':'application/json'});
 
 
   constructor(private http: HttpClient){

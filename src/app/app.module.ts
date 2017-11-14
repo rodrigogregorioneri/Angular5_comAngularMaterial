@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,7 @@ import 'bootstrap';
     AppComponent
   ],
   imports: [
+    CommonModule,
     AppRoutingModule,
     BrowserModule,
     NoopAnimationsModule,
